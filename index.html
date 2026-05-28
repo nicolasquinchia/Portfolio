@@ -509,7 +509,7 @@
 
                                         <li class="nav-item">
                                         <button
-                                            class="nav-link active"
+                                            class="nav-link active headline-card"
                                             data-bs-toggle="tab"
                                             data-bs-target="#overview">
 
@@ -518,7 +518,7 @@
                                         </button>
                                         </li>
 
-                                        <li class="nav-item">
+                                        <li class="nav-item headline-card">
                                         <button
                                             class="nav-link"
                                             data-bs-toggle="tab"
@@ -529,7 +529,7 @@
                                         </button>
                                         </li>
 
-                                        <li class="nav-item">
+                                        <li class="nav-item headline-card">
                                         <button
                                             class="nav-link"
                                             data-bs-toggle="tab"
@@ -540,7 +540,7 @@
                                         </button>
                                         </li>
 
-                                        <li class="nav-item">
+                                        <li class="nav-item headline-card">
                                         <button
                                             class="nav-link"
                                             data-bs-toggle="tab"
@@ -578,40 +578,56 @@
                                         <!-- Screenshots -->
                                         <div class="tab-pane fade" id="screenshots">
 
-                                        <div class="row g-4">
+                                        <div class="row g-4 mb-2">
 
-                                            <div class="col-md-4">
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Mobile</p>
                                             <img
-                                                src="images/desktop-preview.png"
-                                                class="img-fluid rounded-4"
-                                                alt="Desktop"
-                                            >
-                                            </div>
-
-                                            <div class="col-md-4">
-                                            <img
-                                                src="images/mobile-preview.png"
+                                                src="./assets/images/projects/scentbird_mob.png"
                                                 class="img-fluid rounded-4"
                                                 alt="Mobile"
                                             >
                                             </div>
 
-                                            <div class="col-md-4">
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Dark Mode</p>
                                             <img
-                                                src="images/darkmode-preview.png"
+                                                src="./assets/images/projects/scentbird_dm.PNG"
                                                 class="img-fluid rounded-4"
                                                 alt="Dark Mode"
                                             >
                                             </div>
 
                                         </div>
+                                        <div class="row g-4">
+
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Gmail</p>
+                                            <img
+                                                src="./assets/images/projects/scentbird_gmail.png"
+                                                class="img-fluid rounded-4"
+                                                alt="Mobile"
+                                            >
+                                            </div>
+
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Outlook</p>
+                                            <img
+                                                src="./assets/images/projects/scentbird_outlook.PNG"
+                                                class="img-fluid rounded-4"
+                                                alt="Dark Mode"
+                                            >
+                                            </div>
+
+                                        </div>
+                                        
 
                                         </div>
 
                                         <!-- Testing -->
                                         <div class="tab-pane fade" id="testing">
                                             <h4>Clients Tested</h4>
-                                            <ul class="text-secondary">
+                                            <ul class="text-secondary list-unstyled">
                                             <li>✓ Gmail Web (Chrome) — Full rendering, images, links, dark mode</li>
                                             <li>✓ Gmail Android — Mobile stack, image loading, CTA buttons</li>
                                             <li>✓ Outlook Web — VML fallbacks, bulletproof buttons, background images</li>
@@ -619,18 +635,18 @@
                                             </ul>
 
                                             <h4>What Was Verified</h4>
-                                            <ul class="text-secondary">
+                                            <ul class="text-secondary list-unstyled">
                                             <li>✓ All 6 product module CTAs link correctly</li>
                                             <li>✓ Background images render across all tested clients</li>
                                             <li>✓ Fragrance note icons stack correctly on mobile</li>
                                             <li>✓ Dark mode does not break text contrast</li>
                                             <li>✓ Footer links functional — Privacy Policy, Terms, Unsubscribe</li>
                                             <li>✓ Social media icons link correctly</li>
-                                            <li>✓ Email renders below 102KB Gmail clipping threshold</li>
+                                            <li>✓ Email renders below 140KB Gmail clipping threshold</li>
                                             </ul>
 
                                             <h4>Known Limitations</h4>
-                                            <ul class="text-secondary">
+                                            <ul class="text-secondary list-unstyled">
                                             <li>⚠ Gmail Android Dark Mode — partial support. 
                                             Gmail's aggressive color inversion on Android overrides 
                                             mix-blend-mode techniques in some text areas. 
