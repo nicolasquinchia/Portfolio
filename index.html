@@ -430,9 +430,7 @@
                                         </h3>
 
                                         <p class="text-secondary mb-4">
-                                        Responsive promotional email recreation focused on
-                                        visual hierarchy, product presentation, responsive behavior,
-                                        and cross-client compatibility.
+                                        Responsive promotional email recreation focused on modular architecture, dynamic product blocks, cross-client compatibility, and Dark Mode support across Gmail, Apple Mail, and Outlook.
                                         </p>
 
                                         <!-- Tags -->
@@ -444,6 +442,8 @@
                                         <span class="badge bg-secondary">Dark Mode</span>
                                         <span class="badge bg-secondary">Accessibility</span>
                                         <span class="badge bg-secondary">CRM</span>
+                                        <span class="badge bg-secondary">VML</span>
+                                        <span class="badge bg-secondary">Modular Architecture</span>
 
                                         </div>
 
@@ -463,7 +463,11 @@
                                         </li>
 
                                         <li class="mb-2">
-                                            ✓ Outlook-Friendly Structure
+                                            ✓ VML Outlook Fallbacks
+                                        </li>
+
+                                        <li class="mb-2">
+                                            ✓ Multi-section Background Images
                                         </li>
 
                                         </ul>
@@ -471,12 +475,12 @@
                                         <!-- Buttons -->
                                         <div class="d-flex flex-wrap gap-3">
 
-                                        <a href="#"
+                                        <a target="_blank" href="https://nicolasquinchia.github.io/email-portfolio/scentbird/"
                                             class="btn btn-primary px-4 py-2 rounded-pill">
                                             Live Preview
                                         </a>
 
-                                        <a target="_blank" href="https://github.com/nicolasquinchia/email-portfolio/tree/main/Scebtbird1"
+                                        <a target="_blank" href="https://github.com/nicolasquinchia/email-portfolio/tree/main/scentbird"
                                             class="btn btn-outline-secondary px-4 py-2 rounded-pill">
                                             View GitHub
                                         </a>
@@ -555,11 +559,19 @@
                                         <!-- Overview -->
                                         <div class="tab-pane fade show active" id="overview">
 
-                                        <p class="text-secondary">
-                                            This email recreation was built focusing on responsive email
-                                            techniques, CTA hierarchy, accessibility considerations,
-                                            and consistent rendering across major email clients.
-                                        </p>
+                                        <p class="text-secondary">This email recreation is based on Scentbird's <strong>"Be Bold — Trending Note"</strong> promotional campaign. The build was approached as a production-ready email, replicating the original's modular structure where each fragrance section is an independent, reusable component sharing the same HTML architecture with unique background images and product assets.</p>
+
+                                        <p class="text-secondary">The email features six product modules, each built with a full-width background image technique using CSS <code>background-image</code> with VML fallbacks for Outlook compatibility. Product bottle images use transparent WebP assets layered over the background, ensuring visual fidelity across modern email clients.</p>
+
+                                        <p class="text-secondary">Special attention was given to:</p>
+                                        <ul class="text-secondary">
+                                        <li>Cross-client rendering consistency across Gmail, Outlook, and Apple Mail</li>
+                                        <li>Bulletproof CTA buttons using VML for Outlook compatibility</li>
+                                        <li>Fluid responsive behavior without relying on media queries for core layout shifts</li>
+                                        <li>ADA/WCAG accessibility considerations including meaningful alt text and semantic structure</li>
+                                        </ul>
+
+                                        <p class="text-secondary"><em>Recreated for portfolio purposes only. Original email by Scentbird. Not affiliated with or endorsed by Scentbird. Assets sourced from Scentbird's public marketing CDN.</em></p>
 
                                         </div>
 
@@ -598,58 +610,80 @@
 
                                         <!-- Testing -->
                                         <div class="tab-pane fade" id="testing">
-
-                                        <div class="row">
-
-                                            <div class="col-md-6">
-
-                                            <ul class="list-group list-group-flush">
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Gmail Web
-                                                </li>
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Outlook Web
-                                                </li>
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Apple Mail
-                                                </li>
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Gmail Android
-                                                </li>
-
+                                            <h4>Clients Tested</h4>
+                                            <ul class="text-secondary">
+                                            <li>✓ Gmail Web (Chrome) — Full rendering, images, links, dark mode</li>
+                                            <li>✓ Gmail Android — Mobile stack, image loading, CTA buttons</li>
+                                            <li>✓ Outlook Web — VML fallbacks, bulletproof buttons, background images</li>
+                                            <li>✓ Apple Mail (simulated) — Dark mode inversion, image rendering</li>
                                             </ul>
 
-                                            </div>
+                                            <h4>What Was Verified</h4>
+                                            <ul class="text-secondary">
+                                            <li>✓ All 6 product module CTAs link correctly</li>
+                                            <li>✓ Background images render across all tested clients</li>
+                                            <li>✓ Fragrance note icons stack correctly on mobile</li>
+                                            <li>✓ Dark mode does not break text contrast</li>
+                                            <li>✓ Footer links functional — Privacy Policy, Terms, Unsubscribe</li>
+                                            <li>✓ Social media icons link correctly</li>
+                                            <li>✓ Email renders below 102KB Gmail clipping threshold</li>
+                                            </ul>
 
-                                        </div>
-
+                                            <h4>Known Limitations</h4>
+                                            <ul class="text-secondary">
+                                            <li>⚠ Gmail Android Dark Mode — partial support. 
+                                            Gmail's aggressive color inversion on Android overrides 
+                                            mix-blend-mode techniques in some text areas. 
+                                            Full dark mode support available in Apple Mail and Outlook.</li>
                                         </div>
 
                                         <!-- Notes -->
                                         <div class="tab-pane fade" id="notes">
 
-                                        <ul class="text-secondary">
+                                        <h4>Background Image Technique</h4>
+                                        <p class="text-secondary">Each product section uses a full-width background image combining CSS <code>background-image</code> with a VML <code>v:rect</code> fallback, ensuring correct rendering in Outlook 2013–365. Each VML block includes explicit width and height declarations matching the content height of its section.</p>
 
-                                            <li class="mb-2">
-                                            Built with table-based layouts and inline CSS
-                                            </li>
+                                        <h4>Transparent Product Images</h4>
+                                        <p class="text-secondary">Fragrance bottle images use transparent WebP assets sourced from Scentbird's public CDN. A <code>bgcolor</code> fallback matching each section's color palette was applied to the containing <code>&lt;td&gt;</code> to handle Gmail's inconsistent WebP transparency rendering.</p>
 
-                                            <li class="mb-2">
-                                            Responsive stacking techniques implemented
-                                            </li>
+                                        <h4>Bulletproof CTA Buttons</h4>
+                                        <p class="text-secondary">All <em>Subscribe Now</em> CTAs use the VML bulletproof button technique (<code>v:rect</code> + <code>w:anchorlock</code>), ensuring solid background color and correct dimensions in all Outlook versions where CSS <code>background-color</code> on anchor tags is not supported.</p>
 
-                                            <li class="mb-2">
-                                            Optimized spacing for mobile rendering
-                                            </li>
+                                        <h4>Dark Mode Handling</h4>
+                                        <p class="text-secondary">Dark Mode support was implemented using two complementary techniques:</p>
+                                        <ul>
+                                        <li><code>u+.body { mix-blend-mode: screen }</code> for Gmail Dark Mode handling</li>
+                                        <li><code>@media (prefers-color-scheme: dark)</code> overrides for Apple Mail and iOS Mail</li>
+                                        </ul>
+                                        <p class="text-secondary">The dark header and footer sections are intentionally dark-first, eliminating color inversion issues in those areas across all clients.</p>
 
-                                            <li class="mb-2">
-                                            Dark mode compatibility considerations applied
-                                            </li>
+                                        <h4>Fluid Responsive Layout</h4>
+                                        <p class="text-secondary">Mobile responsiveness was achieved through:</p>
+                                        <ul>
+                                        <li>Percentage-based widths with <code>max-width</code> constraints on key containers</li>
+                                        <li><code>display: inline-block</code> on fragrance note icon cells for natural wrapping behavior</li>
+                                        <li>Fluid image scaling using <code>width: 100%</code> with <code>max-width</code> declarations</li>
+                                        </ul>
+                                        <p class="text-secondary">This approach avoids media query dependency for core stacking behavior, ensuring compatibility with Gmail mobile's limited CSS support in the <code>&lt;head&gt;</code>.</p>
 
+                                        <h4>Modular Architecture</h4>
+                                        <p class="text-secondary">The email is structured as six independent product modules sharing identical HTML architecture. Only the following change between modules:</p>
+                                        <ul>
+                                        <li>Background image URL</li>
+                                        <li>Product bottle image URL and link</li>
+                                        <li>Brand name and fragrance name</li>
+                                        <li>Fragrance note icons and labels</li>
+                                        <li>CTA destination URL</li>
+                                        </ul>
+                                        <p class="text-secondary">This makes the template fully scalable — new products can be added by duplicating one module block and updating its variables, with no structural changes required.</p>
+
+                                        <h4>QA Process</h4>
+                                        <p class="text-secondary">Tested across the following environments:</p>
+                                        <ul>
+                                        <li>Gmail desktop — Chrome</li>
+                                        <li>Gmail mobile — Chrome DevTools device emulation (375px)</li>
+                                        <li>Outlook Web (outlook.com)</li>
+                                        <li>Dark Mode — Chrome DevTools CSS media emulation (<code>prefers-color-scheme: dark</code>)</li>
                                         </ul>
 
                                         </div>
