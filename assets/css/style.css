@@ -857,6 +857,51 @@ a:hover {
   border: 1px solid var(--bg-color);
 }
 
+
+/* Hover GIF Effect */
+
+.project-preview {
+  cursor: pointer;
+}
+
+.gif-preview {
+  opacity: 0;
+  transition: opacity .4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-preview:hover .gif-preview {
+  opacity: 1;
+}
+
+.project-preview:hover .static-preview {
+  opacity: 0;
+}
+
+/* Tabs */
+
+.nav-tabs .nav-link {
+  color: #aaa;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+}
+
+.headline-card {
+  color: --text-color;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/

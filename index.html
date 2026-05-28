@@ -383,67 +383,283 @@
             <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What I've done?</span></h6>
             <h2 class="section-heading text-center">Projects</h2>
             <div class="row justify-content-center mt-4 gy-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-12 col-md-12">
                     <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="./assets/images/projects/cta.png" class="img-fluid icon" alt="Layout Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="#tbd" class="card-title title" target="_blank">CTA & Conversion Optimization</a>
-                                    <p class="stacks m-0">HTML | CSS | Figma | Canva | Email on Acid</p>
-                                </div>
-                                <!-- <div class="col-3 align-middle">
-                                    <a href="#tbd" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Code <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div> -->
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Improving Mobile Experience & Visual Messaging in Email Design.</p>
-                            <p>Optimized a re-engagement email layout to improve CTA visibility, mobile usability, and overall user flow through better visual hierarchy and content prioritization.</p>
-                            <p>
-                                <a class="btn btn-sm primary-bg-btn rounded-5" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    More Info
-                                </a>
-                            </p>
-                            <div class="collapse" id="collapseExample1" style="margin-bottom: 8px;">
-                                <div class="card card-body">
-                                    <p>The goal was to strengthen the primary action (quote completion), improve scanability on mobile devices, and reduce friction in the user journey by making key elements more prominent and easier to interact with.</p>
-                                    <ul>
-                                        <li>Improved CTA visibility through color contrast and visual emphasis</li>
-                                        <li>Increased CTA effectiveness by reinforcing placement and repetition</li>
-                                        <li>Optimized layout for mobile-first readability and vertical flow</li>
-                                        <li>Enhanced visual hierarchy between headline, supporting text, and action elements</li>
-                                        <li>Refined spacing and content distribution for better scanning</li>
-                                        <li>Simplified content structure to reduce cognitive load</li>
-                                        <li>Ensured consistency across sections to support a smoother user experience</li>
+                        <section class="projects py-1">
+                            <div class="container">
+                                <!-- Featured Project -->
+                                <div class="row align-items-center g-5">
+
+                                    <!-- Email Preview -->
+                                    <div class="col-lg-5">
+
+                                        <div class="project-preview position-relative overflow-hidden rounded-4 text-center">
+
+                                        <!-- Static Image -->
+                                        <img
+                                            src="./assets/images/projects/pj_mainsc.png"
+                                            class="img-fluid static-preview mb-3"
+                                            alt="Email Preview"
+                                        >
+
+                                        <!-- GIF Preview -->
+                                        <img
+                                            src="./assets/images/projects/pj1.gif"
+                                            class="img-fluid gif-preview position-absolute top-0 start-0 mb-3"
+                                            alt="GIF Preview"
+                                        >
+
+                                        <small class="text-secondary">
+                                            Hover preview animation
+                                        </small>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Project Info -->
+                                    <div class="col-lg-7 ml-1">
+
+                                        <span class="badge bg-primary mb-3">
+                                        Featured Project
+                                        </span>
+
+                                        <h3 class="h3 headline-card fw-bold mb-3">
+                                        Scentbird – Trending Note: Be Bold
+                                        </h3>
+
+                                        <p class="text-secondary mb-4">
+                                        Responsive promotional email recreation focused on
+                                        visual hierarchy, product presentation, responsive behavior,
+                                        and cross-client compatibility.
+                                        </p>
+
+                                        <!-- Tags -->
+                                        <div class="d-flex flex-wrap gap-2 mb-4">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">CSS</span>
+                                        <span class="badge bg-secondary">Responsive</span>
+                                        <span class="badge bg-secondary">Dark Mode</span>
+                                        <span class="badge bg-secondary">Accessibility</span>
+                                        <span class="badge bg-secondary">CRM</span>
+
+                                        </div>
+
+                                        <!-- Project Details -->
+                                        <ul class="list-unstyled text-secondary mb-4">
+
+                                        <li class="mb-2">
+                                            ✓ Marketing Email
+                                        </li>
+
+                                        <li class="mb-2">
+                                            ✓ Table-based Layout
+                                        </li>
+
+                                        <li class="mb-2">
+                                            ✓ Mobile Optimized
+                                        </li>
+
+                                        <li class="mb-2">
+                                            ✓ Outlook-Friendly Structure
+                                        </li>
+
+                                        </ul>
+
+                                        <!-- Buttons -->
+                                        <div class="d-flex flex-wrap gap-3">
+
+                                        <a href="#"
+                                            class="btn btn-primary px-4 py-2 rounded-pill">
+                                            Live Preview
+                                        </a>
+
+                                        <a href="#"
+                                            class="btn btn-outline-secondary px-4 py-2 rounded-pill">
+                                            View GitHub
+                                        </a>
+
+                                        <button
+                                            class="btn btn-outline-secondary px-4 py-2 rounded-pill"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#projectDetails">
+
+                                            More Details
+
+                                        </button>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    </div>
+
+                                    <!-- Expandable Section -->
+                                    <div class="collapse mt-5" id="projectDetails">
+
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-tabs border-secondary mb-4" id="projectTabs">
+
+                                        <li class="nav-item">
+                                        <button
+                                            class="nav-link active"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#overview">
+
+                                            Overview
+
+                                        </button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                        <button
+                                            class="nav-link"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#screenshots">
+
+                                            Screenshots
+
+                                        </button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                        <button
+                                            class="nav-link"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#testing">
+
+                                            Testing
+
+                                        </button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                        <button
+                                            class="nav-link"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#notes">
+
+                                            Technical Notes
+
+                                        </button>
+                                        </li>
+
                                     </ul>
-                                    <p>Focused on guiding users toward completing their quote by prioritizing clarity, action visibility, and ease of interaction. The updated layout improves how users scan and engage with the content, especially in mobile environments where attention is limited and decisions need to be quick.<br>This approach supports better engagement by making the primary action clear, accessible, and visually dominant throughout the email.</p>
-                                    <p><em>Branding has been anonymized and the original layout partially reconstructed to preserve confidentiality while accurately representing real-world email design constraints.</em></p>
-                                </div>
+
+                                    <!-- Tab Content -->
+                                    <div class="tab-content">
+
+                                        <!-- Overview -->
+                                        <div class="tab-pane fade show active" id="overview">
+
+                                        <p class="text-secondary">
+                                            This email recreation was built focusing on responsive email
+                                            techniques, CTA hierarchy, accessibility considerations,
+                                            and consistent rendering across major email clients.
+                                        </p>
+
+                                        </div>
+
+                                        <!-- Screenshots -->
+                                        <div class="tab-pane fade" id="screenshots">
+
+                                        <div class="row g-4">
+
+                                            <div class="col-md-4">
+                                            <img
+                                                src="images/desktop-preview.png"
+                                                class="img-fluid rounded-4"
+                                                alt="Desktop"
+                                            >
+                                            </div>
+
+                                            <div class="col-md-4">
+                                            <img
+                                                src="images/mobile-preview.png"
+                                                class="img-fluid rounded-4"
+                                                alt="Mobile"
+                                            >
+                                            </div>
+
+                                            <div class="col-md-4">
+                                            <img
+                                                src="images/darkmode-preview.png"
+                                                class="img-fluid rounded-4"
+                                                alt="Dark Mode"
+                                            >
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+
+                                        <!-- Testing -->
+                                        <div class="tab-pane fade" id="testing">
+
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+
+                                            <ul class="list-group list-group-flush">
+
+                                                <li class="list-group-item bg-transparent text-light border-secondary">
+                                                ✓ Gmail Web
+                                                </li>
+
+                                                <li class="list-group-item bg-transparent text-light border-secondary">
+                                                ✓ Outlook Web
+                                                </li>
+
+                                                <li class="list-group-item bg-transparent text-light border-secondary">
+                                                ✓ Apple Mail
+                                                </li>
+
+                                                <li class="list-group-item bg-transparent text-light border-secondary">
+                                                ✓ Gmail Android
+                                                </li>
+
+                                            </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+
+                                        <!-- Notes -->
+                                        <div class="tab-pane fade" id="notes">
+
+                                        <ul class="text-secondary">
+
+                                            <li class="mb-2">
+                                            Built with table-based layouts and inline CSS
+                                            </li>
+
+                                            <li class="mb-2">
+                                            Responsive stacking techniques implemented
+                                            </li>
+
+                                            <li class="mb-2">
+                                            Optimized spacing for mobile rendering
+                                            </li>
+
+                                            <li class="mb-2">
+                                            Dark mode compatibility considerations applied
+                                            </li>
+
+                                        </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                    </div>
+
                             </div>
-                        </div>
-                        <div class="row justify-content-center row-cols-3">
-                            <div class="col banner-container">
-                                <div class="overlay">
-                                    <a href="#tbd" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                                <img src="./assets/images/projects/p2before.PNG" class="card-img-top banner" alt="PfpFinder Banner">
-                            </div>
-                            <div class="col banner-container">
-                                <div class="overlay">
-                                    <a href="#tbd" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                                <img src="./assets/images/projects/p2after.png" class="card-img-top banner" alt="PfpFinder Banner">
-                            </div>
-                            <div class="col banner-container">
-                                <div class="overlay">
-                                    <a href="#tbd" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                                <img src="./assets/images/projects/p2aftermob.PNG" class="card-img-top banner" alt="PfpFinder Banner">
-                            </div>
-                        </div>
+                            </section>
+
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
