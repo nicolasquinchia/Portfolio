@@ -627,30 +627,31 @@
                                         <!-- Testing -->
                                         <div class="tab-pane fade" id="testing">
                                             <h4>Clients Tested</h4>
-                                            <ul class="text-secondary list-unstyled">
-                                            <li>✓ Gmail Web (Chrome) — Full rendering, images, links, dark mode</li>
-                                            <li>✓ Gmail Android — Mobile stack, image loading, CTA buttons</li>
-                                            <li>✓ Outlook Web — VML fallbacks, bulletproof buttons, background images</li>
-                                            <li>✓ Apple Mail (simulated) — Dark mode inversion, image rendering</li>
+                                            <ul style="list-style-type: none;">
+                                              <li>✓ Gmail Web (Chrome) — Full rendering, images, links, CTA buttons</li>
+                                              <li>✓ Gmail Mobile (Android) — Fluid layout, image loading, CTA buttons</li>
+                                              <li>✓ Outlook Web (outlook.com) — VML rounded buttons, section dividers</li>
+                                              <li>✓ Dark Mode (Chrome DevTools — prefers-color-scheme: dark)</li>
                                             </ul>
 
                                             <h4>What Was Verified</h4>
-                                            <ul class="text-secondary list-unstyled">
-                                            <li>✓ All 6 product module CTAs link correctly</li>
-                                            <li>✓ Background images render across all tested clients</li>
-                                            <li>✓ Fragrance note icons stack correctly on mobile</li>
-                                            <li>✓ Dark mode does not break text contrast</li>
-                                            <li>✓ Footer links functional — Privacy Policy, Terms, Unsubscribe</li>
-                                            <li>✓ Social media icons link correctly</li>
-                                            <li>✓ Email renders below 140KB Gmail clipping threshold</li>
+                                            <ul style="list-style-type: none;">
+                                              <li>✓ Primary CTA "Get started" renders with rounded corners in Outlook</li>
+                                              <li>✓ Secondary CTA "Check it out" renders as outlined button in all clients</li>
+                                              <li>✓ Preheader text displays correctly without body copy bleed</li>
+                                              <li>✓ All three perk cards render correctly at desktop and fluid mobile widths</li>
+                                              <li>✓ App Store and Google Play badges link correctly</li>
+                                              <li>✓ All social icons link to correct profiles</li>
+                                              <li>✓ Footer legal links functional — Unsubscribe, Preferences, Privacy, Feedback</li>
+                                              <li>✓ Section dividers render consistently across Gmail and Outlook</li>
                                             </ul>
 
                                             <h4>Known Limitations</h4>
-                                            <ul class="text-secondary list-unstyled">
-                                            <li>⚠ Gmail Android Dark Mode — partial support. 
-                                            Gmail's aggressive color inversion on Android overrides 
-                                            mix-blend-mode techniques in some text areas. 
-                                            Full dark mode support available in Apple Mail and Outlook.</li>
+                                            <ul style="list-style-type: none;">
+                                              <li>⚠ Two-column perk layout below 360px may feel tight — full stack behavior would require media queries not implemented in this fluid build</li>
+                                              <li>⚠ Gmail Android dark mode applies partial color inversion on light background sections — inherent Gmail limitation, not controllable via CSS</li>
+                                              <li>⚠ Social icons use inline <code>&nbsp;</code> spacing — a table-based implementation would be more Outlook-consistent (noted improvement for future builds)</li>
+                                            </ul>
                                         </div>
 
                                         <!-- Notes -->
@@ -727,14 +728,14 @@
 
                                         <!-- Static Image -->
                                         <img
-                                            src="./assets/images/projects/pj_mainsc.png"
+                                            src="./assets/images/projects/pj2_mainsc.png"
                                             class="img-fluid static-preview mb-3"
                                             alt="Email Preview"
                                         >
 
                                         <!-- GIF Preview -->
                                         <img
-                                            src="./assets/images/projects/pj1.gif"
+                                            src="./assets/images/projects/pj2.gif"
                                             class="img-fluid gif-preview position-absolute top-0 start-0 mb-3"
                                             alt="GIF Preview"
                                         >
@@ -755,13 +756,11 @@
                                         </span>
 
                                         <h3 class="h3 headline-card fw-bold mb-3">
-                                        Scentbird – Trending Note: Be Bold
+                                        KAYAK — Welcome Aboard
                                         </h3>
 
                                         <p class="text-secondary mb-4">
-                                        Responsive promotional email recreation focused on
-                                        visual hierarchy, product presentation, responsive behavior,
-                                        and cross-client compatibility.
+                                        Responsive onboarding email recreation focused on fluid layout, bulletproof rounded buttons, preheader padding technique, and Dark Mode support across Gmail, Apple Mail, and Outlook.
                                         </p>
 
                                         <!-- Tags -->
@@ -772,27 +771,32 @@
                                         <span class="badge bg-secondary">Responsive</span>
                                         <span class="badge bg-secondary">Dark Mode</span>
                                         <span class="badge bg-secondary">Accessibility</span>
-                                        <span class="badge bg-secondary">CRM</span>
-
+                                        <span class="badge bg-secondary">Fluid Layout</span>
+                                        <span class="badge bg-secondary">VML</span>
+                                        <span class="badge bg-secondary">Onboarding</span>
                                         </div>
 
                                         <!-- Project Details -->
                                         <ul class="list-unstyled text-secondary mb-4">
 
                                         <li class="mb-2">
-                                            ✓ Marketing Email
+                                            ✓ Onboarding / Welcome Email
                                         </li>
 
                                         <li class="mb-2">
-                                            ✓ Table-based Layout
+                                            ✓ Fluid Layout
                                         </li>
 
                                         <li class="mb-2">
-                                            ✓ Mobile Optimized
+                                            ✓ Bulletproof Rounded Buttons
                                         </li>
 
                                         <li class="mb-2">
-                                            ✓ Outlook-Friendly Structure
+                                            ✓ Preheader Padding Technique
+                                        </li>
+
+                                        <li class="mb-2">
+                                            ✓ Dark Mode Support
                                         </li>
 
                                         </ul>
@@ -800,12 +804,12 @@
                                         <!-- Buttons -->
                                         <div class="d-flex flex-wrap gap-3">
 
-                                        <a href="#"
+                                        <a target="_blank" href="https://nicolasquinchia.github.io/email-portfolio/kayak/"
                                             class="btn btn-primary px-4 py-2 rounded-pill">
                                             Live Preview
                                         </a>
 
-                                        <a target="_blank" href="https://github.com/nicolasquinchia/email-portfolio/tree/main/Scebtbird1"
+                                        <a target="_blank" href="https://github.com/nicolasquinchia/email-portfolio/tree/main/kayak"
                                             class="btn btn-outline-secondary px-4 py-2 rounded-pill">
                                             View GitHub
                                         </a>
@@ -813,7 +817,7 @@
                                         <button
                                             class="btn btn-outline-secondary px-4 py-2 rounded-pill"
                                             data-bs-toggle="collapse"
-                                            data-bs-target="#projectDetails">
+                                            data-bs-target="#projectDetails2">
 
                                             More Details
 
@@ -827,7 +831,7 @@
                                     </div>
 
                                     <!-- Expandable Section -->
-                                    <div class="collapse mt-5" id="projectDetails">
+                                    <div class="collapse mt-5" id="projectDetails2">
 
                                     <!-- Tabs -->
                                     <ul class="nav nav-tabs border-secondary mb-4" id="projectTabs">
@@ -836,7 +840,7 @@
                                         <button
                                             class="nav-link active"
                                             data-bs-toggle="tab"
-                                            data-bs-target="#overview">
+                                            data-bs-target="#overview2">
 
                                             Overview
 
@@ -847,7 +851,7 @@
                                         <button
                                             class="nav-link"
                                             data-bs-toggle="tab"
-                                            data-bs-target="#screenshots">
+                                            data-bs-target="#screenshots2">
 
                                             Screenshots
 
@@ -858,7 +862,7 @@
                                         <button
                                             class="nav-link"
                                             data-bs-toggle="tab"
-                                            data-bs-target="#testing">
+                                            data-bs-target="#testing2">
 
                                             Testing
 
@@ -869,7 +873,7 @@
                                         <button
                                             class="nav-link"
                                             data-bs-toggle="tab"
-                                            data-bs-target="#notes">
+                                            data-bs-target="#notes2">
 
                                             Technical Notes
 
@@ -882,104 +886,143 @@
                                     <div class="tab-content">
 
                                         <!-- Overview -->
-                                        <div class="tab-pane fade show active" id="overview">
+                                        <div class="tab-pane fade show active" id="overview2">
 
-                                        <p class="text-secondary">
-                                            This email recreation was built focusing on responsive email
-                                            techniques, CTA hierarchy, accessibility considerations,
-                                            and consistent rendering across major email clients.
-                                        </p>
+                                        <p class="text-secondary">This email recreation is based on <strong>KAYAK's welcome onboarding email</strong>, sent to new users immediately after account creation. The email introduces three core product features — Price Alerts, Trips, and Wishlist — through a clean card-based layout, followed by a secondary CTA promoting the KAYAK Navigator tool and an app download section.</p>
+
+                                        <p class="text-secondary">The build prioritizes <strong>fluid responsive behavior</strong> over media query dependency, ensuring compatibility with Gmail mobile's limited <code>&lt;head&gt;</code> CSS support while maintaining readability across all screen sizes.</p>
+
+                                        <p class="text-secondary">Special attention was given to:</p>
+                                        <ul class="text-secondary">
+                                          <li>Fluid layout using percentage-based widths and <code>max-width</code> constraints — no core stacking requires media queries</li>
+                                          <li>Bulletproof rounded CTA buttons using <code>v:roundrect</code> for full Outlook compatibility</li>
+                                          <li>Preheader padding with invisible zero-width characters to control email preview text across all clients</li>
+                                          <li>Dark Mode support using <code>mix-blend-mode: screen</code> for Gmail and <code>prefers-color-scheme: dark</code> for Apple Mail</li>
+                                          <li>Section dividers built with <code>bgcolor</code> on <code>&lt;td&gt;</code> elements for Outlook-safe rendering</li>
+                                          <li>Full CAN-SPAM compliance including physical address, unsubscribe, and preference links</li>
+                                        </ul>
+
+                                        <p class="text-secondary"><em>Recreated for portfolio purposes only. Original email by KAYAK Software Corporation. Not affiliated with or endorsed by KAYAK. Assets sourced from KAYAK's public image CDN.</em></p>
 
                                         </div>
 
                                         <!-- Screenshots -->
-                                        <div class="tab-pane fade" id="screenshots">
+                                        <div class="tab-pane fade" id="screenshots2">
 
-                                        <div class="row g-4">
+                                        <div class="row g-4 mb-2">
 
-                                            <div class="col-md-4">
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Mobile</p>
                                             <img
-                                                src="images/desktop-preview.png"
-                                                class="img-fluid rounded-4"
-                                                alt="Desktop"
-                                            >
-                                            </div>
-
-                                            <div class="col-md-4">
-                                            <img
-                                                src="images/mobile-preview.png"
+                                                src="./assets/images/projects/kayak_mob.PNG"
                                                 class="img-fluid rounded-4"
                                                 alt="Mobile"
                                             >
                                             </div>
 
-                                            <div class="col-md-4">
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Dark Mode</p>
                                             <img
-                                                src="images/darkmode-preview.png"
+                                                src="./assets/images/projects/kayak_dm.PNG"
                                                 class="img-fluid rounded-4"
                                                 alt="Dark Mode"
                                             >
                                             </div>
 
                                         </div>
-
-                                        </div>
-
-                                        <!-- Testing -->
-                                        <div class="tab-pane fade" id="testing">
-
-                                        <div class="row">
+                                        <div class="row g-4">
 
                                             <div class="col-md-6">
+                                            <p class="mb-2">Gmail</p>
+                                            <img
+                                                src="./assets/images/projects/kayak_gmail.PNG"
+                                                class="img-fluid rounded-4"
+                                                alt="Gmail"
+                                            >
+                                            </div>
 
-                                            <ul class="list-group list-group-flush">
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Gmail Web
-                                                </li>
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Outlook Web
-                                                </li>
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Apple Mail
-                                                </li>
-
-                                                <li class="list-group-item bg-transparent text-light border-secondary">
-                                                ✓ Gmail Android
-                                                </li>
-
-                                            </ul>
-
+                                            <div class="col-md-6">
+                                            <p class="mb-2">Outlook</p>
+                                            <img
+                                                src="./assets/images/projects/kayak_outlook.PNG"
+                                                class="img-fluid rounded-4"
+                                                alt="Outlook"
+                                            >
                                             </div>
 
                                         </div>
+                                        
 
+                                        </div>
+                                        <!-- Testing -->
+                                        <div class="tab-pane fade" id="testing2">
+                                        <h4>Clients Tested</h4>
+                                        <ul style="list-style-type: none;">
+                                          <li>✓ Gmail Web (Chrome) — Full rendering, images, links, CTA buttons</li>
+                                          <li>✓ Gmail Mobile (Android) — Fluid layout, image loading, CTA buttons</li>
+                                          <li>✓ Outlook Web (outlook.com) — VML rounded buttons, section dividers</li>
+                                          <li>✓ Dark Mode (Chrome DevTools — prefers-color-scheme: dark)</li>
+                                        </ul>
+
+                                        <h4>What Was Verified</h4>
+                                        <ul style="list-style-type: none;">
+                                          <li>✓ Primary CTA "Get started" renders with rounded corners in Outlook</li>
+                                          <li>✓ Secondary CTA "Check it out" renders as outlined button in all clients</li>
+                                          <li>✓ Preheader text displays correctly without body copy bleed</li>
+                                          <li>✓ All three perk cards render correctly at desktop and fluid mobile widths</li>
+                                          <li>✓ App Store and Google Play badges link correctly</li>
+                                          <li>✓ All social icons link to correct profiles</li>
+                                          <li>✓ Footer legal links functional — Unsubscribe, Preferences, Privacy, Feedback</li>
+                                          <li>✓ Section dividers render consistently across Gmail and Outlook</li>
+                                        </ul>
+
+                                        <h4>Known Limitations</h4>
+                                        <ul style="list-style-type: none;">
+                                          <li>⚠ Two-column perk layout below 360px may feel tight — full stack behavior would require media queries not implemented in this fluid build</li>
+                                          <li>⚠ Gmail Android dark mode applies partial color inversion on light background sections — inherent Gmail limitation, not controllable via CSS</li>
+                                          <li>⚠ Social icons use inline <code>&nbsp;</code> spacing — a table-based implementation would be more Outlook-consistent (noted improvement for future builds)</li>
+                                        </ul>
                                         </div>
 
                                         <!-- Notes -->
-                                        <div class="tab-pane fade" id="notes">
+                                        <div class="tab-pane fade" id="notes2">
 
-                                        <ul class="text-secondary">
+                                        <h4>Fluid Layout Without Media Queries</h4>
+                                        <p class="text-secondary">The email uses percentage-based widths with <code>max-width</code> constraints on all key containers rather than relying on media queries for core layout behavior. This ensures the email reads correctly in Gmail mobile, which strips <code>&lt;head&gt;</code> CSS entirely. The two-column perk card layout maintains readability down to approximately 360px without any stacking logic.</p>
 
-                                            <li class="mb-2">
-                                            Built with table-based layouts and inline CSS
-                                            </li>
-
-                                            <li class="mb-2">
-                                            Responsive stacking techniques implemented
-                                            </li>
-
-                                            <li class="mb-2">
-                                            Optimized spacing for mobile rendering
-                                            </li>
-
-                                            <li class="mb-2">
-                                            Dark mode compatibility considerations applied
-                                            </li>
-
+                                        <h4>Bulletproof Rounded Buttons</h4>
+                                        <p class="text-secondary">Primary and secondary CTAs use different VML approaches intentionally:</p>
+                                        <ul>
+                                          <li><strong>Primary CTA</strong> — <code>v:roundrect</code> with <code>arcsize="8%"</code> produces rounded corners in Outlook, matching the original's brand style</li>
+                                          <li><strong>Secondary CTA</strong> — outline button using CSS <code>border</code> inline style with a <code>v:roundrect</code> fallback for Outlook</li>
                                         </ul>
+                                        <p class="text-secondary">This demonstrates two different bulletproof button patterns within the same email — solid fill and outlined.</p>
+
+                                        <h4>Preheader Padding with Invisible Characters</h4>
+                                        <p class="text-secondary">The preheader uses zero-width non-joiner characters (<code>͏‌</code>) to pad the preview text to full length. This prevents email clients from pulling in body copy as additional preview text, giving full control over the inbox preview string without adding visible content.</p>
+
+                                        <h4>Dark Mode Handling</h4>
+                                        <p class="text-secondary">Dark Mode support implemented using two complementary techniques:</p>
+                                        <ul>
+                                          <li><code>color-scheme: light dark</code> declared in <code>:root</code> for client-level awareness</li>
+                                          <li><code>u+.body .txt_white { mix-blend-mode: screen }</code> for Gmail dark mode text handling</li>
+                                          <li><code>@media (prefers-color-scheme: dark)</code> overrides for Apple Mail and iOS Mail</li>
+                                        </ul>
+
+                                        <h4>Outlook-Safe Section Dividers</h4>
+                                        <p class="text-secondary">Visual dividers between sections use <code>bgcolor</code> on a <code>&lt;td&gt;</code> with a fixed pixel height spacer rather than CSS <code>border</code> or <code>hr</code> elements. This ensures consistent rendering across all Outlook versions, which handle CSS borders inconsistently in table-based layouts.</p>
+
+                                        <h4>CAN-SPAM Compliance</h4>
+                                        <p class="text-secondary">The footer includes all legally required elements:</p>
+                                        <ul>
+                                          <li>Physical mailing address — 1266 E Main Street, Stamford, CT</li>
+                                          <li>Unsubscribe link</li>
+                                          <li>Email preferences link</li>
+                                          <li>Feedback and Privacy Policy links</li>
+                                        </ul>
+
+                                        <h4>Asset Hosting</h4>
+                                        <p class="text-secondary">All images sourced directly from KAYAK's public image CDN (<code>kayak.com/eimg/</code>). No assets were downloaded, modified, or redistributed. All URLs reference their original public locations.</p>
 
                                         </div>
 
