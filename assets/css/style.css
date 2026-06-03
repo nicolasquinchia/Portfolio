@@ -616,6 +616,30 @@ body{margin-top:20px;}
   letter-spacing: 1.5px;
   color: var(--muted-text);
 }
+
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+
+.tool-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 0.5px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+}
+
+.tool-chip img {
+  display: inline-block !important;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 /*--------------------------------------------------------------
 # Things I Love Section
 --------------------------------------------------------------*/
@@ -823,7 +847,6 @@ body{margin-top:20px;}
 --------------------------------------------------------------*/
 
 #tools {
-  padding: 100px 0px 80px 0px;
   background-image: url("./images/grid.png");
   background-size: contain;
   min-height: 100vh;
