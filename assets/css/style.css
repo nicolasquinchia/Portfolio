@@ -637,7 +637,7 @@ body{margin-top:20px;}
   border: 0.5px solid rgba(255,255,255,0.15);
   border-radius: 20px;
   padding: 6px 14px;
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(255,255,255,0.85);
 }
 
@@ -650,8 +650,36 @@ body{margin-top:20px;}
 
 #skills {
   padding: 100px 0px;
-  min-height: 100vh;
+  background-image: url("./images/grid.png");
+  background-size: contain;
+  min-height: 50vh;
 }
+
+.hskillstxt {
+  letter-spacing: 1.5px;
+  color: var(--muted-text);
+  font-size: 18px;
+}
+
+.skillname {
+  background: var(--primary-gradient-color);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skillstxt {
+  letter-spacing: 1.5px;
+  color: var(--muted-text);
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 2px solid var(--primary-gradient-color);
+}
+
+
 
 /*--------------------------------------------------------------
 # Things I Love Section
@@ -856,9 +884,7 @@ body{margin-top:20px;}
 --------------------------------------------------------------*/
 
 #tools {
-  background-image: url("./images/grid.png");
-  background-size: contain;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .tool {
@@ -916,11 +942,11 @@ body{margin-top:20px;}
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow:
-    0 0 1px 0 rgba(144, 81, 227, 0.5),
-    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+    0 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 0 0.5px 0.5px rgba(255, 255, 255, 0.336);
   -webkit-box-shadow:
-    0 0 1px 0 rgba(144, 81, 227, 0.5),
-    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+    0 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 0 0.5px 0.5px rgba(255, 255, 255, 0.336);
 }
 
 .project-card .title {
@@ -1253,11 +1279,11 @@ body{margin-top:20px;}
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow:
-    0 0 1px 0 rgba(144, 81, 227, 0.5),
-    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+    0 0 1px 0 rgba(11, 94, 215, 0.5),
+    0 0 0.5px 0.5px rgba(11, 94, 215, 0.336);
   -webkit-box-shadow:
-    0 0 1px 0 rgba(144, 81, 227, 0.5),
-    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+    0 0 1px 0 rgba(11, 94, 215, 0.5),
+    0 0 0.5px 0.5px rgba(11, 94, 215, 0.336);
 }
 
 .contact-form .form-control {
@@ -1270,11 +1296,11 @@ body{margin-top:20px;}
 .contact-form .form-control:focus {
   box-shadow: none;
   -webkit-box-shadow: none;
-  border-color: #850dd5;
+  border-color: #0b5ed7;
 }
 
 .contact-form .btn {
-  background-color: #850dd5;
+  background-color: #0b5ed7;
 }
 
 /*--------------------------------------------------------------
