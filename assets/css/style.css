@@ -591,6 +591,7 @@ body{margin-top:20px;}
     }
 }
 
+
 .timeline-page .timeline-item .date-label-left:after {
     background-color: #f89d36 !important;
 }
@@ -617,6 +618,13 @@ body{margin-top:20px;}
   color: var(--muted-text);
 }
 
+#experience {
+  padding: 100px 0px;
+  background-image: url("./images/grid.png");
+  background-size: contain;
+  min-height: 100vh;
+}
+
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
@@ -638,6 +646,11 @@ body{margin-top:20px;}
   width: 20px;
   height: 20px;
   object-fit: contain;
+}
+
+#skills {
+  padding: 100px 0px;
+  min-height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -804,10 +817,6 @@ body{margin-top:20px;}
 # Skills Section
 --------------------------------------------------------------*/
 
-#skills {
-  padding: 100px 0px;
-  min-height: 100vh;
-}
 
 .skill {
   display: flex;
